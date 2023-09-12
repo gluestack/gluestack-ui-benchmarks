@@ -1,20 +1,12 @@
 import React from "react";
-import { StyleSheet } from "react-native";
-import { View } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 import { COUNT } from "../../utils";
 
-const ReactNative = ({ toggleVariant }: { toggleVariant: boolean }) => {
+const ReactNative = () => {
   return (
     <>
       {new Array(COUNT).fill(0).map((_, k) => (
-        <View
-          key={k}
-          style={[
-            styles.box,
-            toggleVariant ? styles.outlined : {},
-            !toggleVariant ? styles.solid : {},
-          ]}
-        />
+        <Pressable key={k} style={[styles.box, styles.solid]} />
       ))}
     </>
   );

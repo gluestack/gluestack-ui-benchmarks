@@ -1,32 +1,71 @@
 import { styled } from "tamagui";
-import React, { useMemo } from "react";
-import { View, Text } from "react-native";
+import React from "react";
 import { COUNT } from "../../utils";
+import { Pressable } from "react-native";
 
-const Box = styled(View, {
+const Button = styled(Pressable, {
   bc: "$yellow5Light",
   p: "$2",
   m: "$1",
+  hoverStyle: {
+    bc: "$yellow6Light",
+  },
+  pressStyle: {
+    bc: "$yellow7Light",
+  },
+  focusStyle: {
+    bc: "$yellow8Light",
+  },
   variants: {
     variant: {
       solid: {
         bc: "$red5Light",
         p: "$2",
+        hoverStyle: {
+          bc: "$red6Light",
+        },
+        pressStyle: {
+          bc: "$red7Light",
+        },
+        focusStyle: {
+          bc: "$red8Light",
+        },
       },
       outlined: {
         borderWidth: "$1",
         borderColor: "$red5Light",
         bc: "transparent",
+        hoverStyle: {
+          bc: "$red6Light",
+        },
+        pressStyle: {
+          bc: "$red7Light",
+        },
+        focusStyle: {
+          bc: "$red8Light",
+        },
       },
     },
   },
 });
 
-const Tamagui = ({ toggleVariant }: { toggleVariant?: boolean }) => {
+const Tamagui = () => {
   return (
     <>
       {new Array(COUNT).fill(0).map((_, k) => (
-        <Box key={k} variant={toggleVariant ? "outlined" : "solid"} />
+        <Button
+          key={k}
+          variant="solid"
+          hoverStyle={{
+            bc: "$purple6Light",
+          }}
+          pressStyle={{
+            bc: "$purple7Light",
+          }}
+          focusStyle={{
+            bc: "$purple8Light",
+          }}
+        />
       ))}
     </>
   );

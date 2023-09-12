@@ -1,18 +1,10 @@
-import {
-  GluestackUIProvider,
-  config,
-  HStack,
-  VStack,
-  Text,
-  Image,
-} from "@gluestack-ui/themed";
+import { HStack, VStack, Text, Image, Button } from "@gluestack-ui/themed";
 import React from "react";
 import { ScrollView } from "react-native";
 import { data } from "../../data";
+
 export function Provider({ children }) {
-  return (
-    <GluestackUIProvider config={config.theme}>{children}</GluestackUIProvider>
-  );
+  return <>{children}</>;
 }
 
 export const ListItem = (item) => {
@@ -91,6 +83,7 @@ export const GlueStack = () => {
   return (
     <ScrollView>
       <Provider>
+        <Button bg="$red400" />
         {[...data, ...data].map((item, index) => (
           <ListItem key={index} item={item} />
         ))}

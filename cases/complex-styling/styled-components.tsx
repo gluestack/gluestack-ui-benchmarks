@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
 import { COUNT } from "../../utils";
 
-const StyledComponents = ({ toggleVariant }: { toggleVariant: boolean }) => {
+const StyledComponents = () => {
   return (
     <>
       {new Array(COUNT).fill(0).map((_, i) => (
-        <Box key={i} $variant={toggleVariant ? "outlined" : "solid"} />
+        <Button key={i} $variant="solid" />
       ))}
     </>
   );
@@ -13,7 +13,7 @@ const StyledComponents = ({ toggleVariant }: { toggleVariant: boolean }) => {
 
 export default StyledComponents;
 
-const BoxVariants = {
+const ButtonVariants = {
   variants: {
     solid: {
       background: "red",
@@ -27,7 +27,7 @@ const BoxVariants = {
   },
 };
 
-const Box = styled.View<{
+const Button = styled.Pressable<{
   $background?: string;
   $padding?: number;
   $variant?: string;
@@ -35,6 +35,12 @@ const Box = styled.View<{
   background: props.$background || "yellow",
   padding: props.$padding || "8px",
   margin: "4px",
-  ...(props.$variant === "solid" ? BoxVariants.variants["solid"] : {}),
-  ...(props.$variant === "outlined" ? BoxVariants.variants["outlined"] : {}),
+  "&:hover": {
+    background: "pink",
+  },
+  "&:active": {
+    background: "red",
+  },
+  ...(props.$variant === "solid" ? ButtonVariants.variants["solid"] : {}),
+  ...(props.$variant === "outlined" ? ButtonVariants.variants["outlined"] : {}),
 }));

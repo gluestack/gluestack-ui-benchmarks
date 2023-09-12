@@ -1,9 +1,9 @@
 import { Factory } from "native-base";
 import React from "react";
-import { View } from "react-native";
+import { Pressable } from "react-native";
 import { COUNT } from "../../utils";
 
-const Box = Factory(View, {
+const Button = Factory(Pressable, {
   baseStyle: {
     bg: "yellow.500",
     p: "2",
@@ -49,11 +49,28 @@ const Box = Factory(View, {
   },
 });
 
-const NativeBase = ({ toggleVariant }: { toggleVariant?: boolean }) => {
+const NativeBase = () => {
   return (
     <>
       {new Array(COUNT).fill(0).map((_, k) => (
-        <Box key={k} variant={toggleVariant ? "outlined" : "solid"} />
+        <Button
+          key={k}
+          variant="solid"
+          _state={{
+            isHovered: true,
+            isPressed: true,
+            isFocused: true,
+          }}
+          _hover={{
+            bg: "violet.500",
+          }}
+          _pressed={{
+            bg: "violet.600",
+          }}
+          _focus={{
+            bg: "violet.700",
+          }}
+        />
       ))}
     </>
   );

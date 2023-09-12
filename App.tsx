@@ -14,6 +14,7 @@ import TMConfig from "./tamagui.config";
 import { TamaguiProvider } from "tamagui";
 import { NativeBaseProvider } from "native-base";
 import ComplexStyling from "./cases/complex-styling";
+import { GluestackUIProvider } from "@gluestack-ui/themed";
 
 const Stack = createNativeStackNavigator();
 
@@ -29,8 +30,8 @@ export default function App() {
 
   return (
     <NativeBaseProvider>
-      <TamaguiProvider config={TMConfig}>
-        <StyledProvider config={config.theme}>
+      <GluestackUIProvider>
+        <TamaguiProvider config={TMConfig}>
           <NavigationProvider>
             <Stack.Navigator initialRouteName="home">
               <Stack.Screen
@@ -77,8 +78,8 @@ export default function App() {
               />
             </Stack.Navigator>
           </NavigationProvider>
-        </StyledProvider>
-      </TamaguiProvider>
+        </TamaguiProvider>
+      </GluestackUIProvider>
     </NativeBaseProvider>
   );
 }

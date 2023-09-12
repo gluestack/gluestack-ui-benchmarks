@@ -1,9 +1,9 @@
 import { styled } from "@gluestack-style/react";
 import React from "react";
-import { View, Text } from "react-native";
+import { Pressable } from "react-native";
 import { COUNT } from "../../utils";
 
-const Box = styled(View, {
+const Button = styled(Pressable, {
   bg: "$yellow500",
   p: "$2",
   m: "$1",
@@ -49,13 +49,18 @@ const Box = styled(View, {
   },
 });
 
-const Gluestack = ({ toggleVariant }: { toggleVariant?: boolean }) => {
+const Gluestack = () => {
   return (
     <>
       {new Array(COUNT).fill(0).map((_, k) => (
-        <Box
+        <Button
           key={k}
-          variant={toggleVariant ? "outlined" : "solid"}
+          states={{
+            hover: true,
+            active: true,
+            focus: true,
+          }}
+          variant="solid"
           sx={{
             ":hover": {
               bg: "$violet600",

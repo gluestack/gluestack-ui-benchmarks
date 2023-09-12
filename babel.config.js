@@ -18,6 +18,7 @@ module.exports = function (api) {
               "./node_modules/@gluestack-ui/themed/build/components/styled"
             ),
           ],
+          components: ["@gluestack-ui/themed"],
         },
       ],
       [

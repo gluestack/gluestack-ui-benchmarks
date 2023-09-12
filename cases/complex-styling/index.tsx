@@ -11,7 +11,6 @@ import StyledComponents from "./styled-components";
 
 function ComplexStyling() {
   const [styleType, setStyleType] = useState(undefined);
-  const [toggleVariant, setToggleVariant] = useState(false);
 
   const onStyleTypePress = (curry: any) => () => {
     setStyleType(curry);
@@ -20,15 +19,15 @@ function ComplexStyling() {
   const renderStyleLibrary = () => {
     switch (styleType) {
       case "React Native":
-        return <ReactNative toggleVariant={toggleVariant} />;
+        return <ReactNative />;
       case "gluestack":
-        return <Gluestack toggleVariant={toggleVariant} />;
+        return <Gluestack />;
       case "Tamagui":
-        return <Tamagui toggleVariant={toggleVariant} />;
+        return <Tamagui />;
       case "NativeBase":
-        return <NativeBase toggleVariant={toggleVariant} />;
+        return <NativeBase />;
       case "Styled Component":
-        return <StyledComponents toggleVariant={toggleVariant} />;
+        return <StyledComponents />;
       default:
         return null;
     }
@@ -44,13 +43,8 @@ function ComplexStyling() {
         title="Styled Component"
         onPress={onStyleTypePress("Styled Component")}
       />
-      <Button
-        title="Change variant"
-        onPress={() => setToggleVariant(!toggleVariant)}
-        color="red"
-      />
       {styleType ? (
-        <TimedRender key={styleType + toggleVariant}>
+        <TimedRender key={styleType}>
           <Text style={styles.text}>
             Rendering with <Text style={styles.bold}>{styleType}</Text>
           </Text>
