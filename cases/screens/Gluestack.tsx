@@ -83,7 +83,6 @@ export const GlueStack = () => {
   return (
     <ScrollView>
       <Provider>
-        <Button bg="$red400" />
         {[...data, ...data].map((item, index) => (
           <ListItem key={index} item={item} />
         ))}
