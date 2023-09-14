@@ -39,7 +39,7 @@ This is an Expo SDK 49 App reproducer to demonstrate the performance difference 
 | NativeBase        | 834 | 828 | 833 | 833 | 830 | 832 |
 | Styled Components | 138 | 141 | 141 | 141 | 140 | 140 |
 
-### Complext styling
+### Complex styling
 
 | Library           | 1    | 2    | 3    | 4    | 5    | avg  |
 | ----------------- | ---- | ---- | ---- | ---- | ---- | ---- |
