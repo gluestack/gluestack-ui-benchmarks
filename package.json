@@ -13,9 +13,9 @@
   "dependencies": {
     "@emotion/native": "11.11.0",
     "@emotion/react": "11.11.1",
-    "@gluestack-style/animation-plugin": "0.1.7",
-    "@gluestack-style/react": "0.2.41",
-    "@gluestack-ui/themed": "^0.1.19",
+    "@gluestack-style/animation-plugin": "0.1.12",
+    "@gluestack-style/react": "0.2.45",
+    "@gluestack-ui/themed": "0.1.39",
     "@gluestack-ui/themed-native-base": "^0.1.7",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.9",
-    "@gluestack-style/babel-plugin-styled-resolver": "^0.2.4",
+    "@gluestack-style/babel-plugin-styled-resolver": "^0.2.5-alpha.0",
     "@tamagui/babel-plugin": "1.47.3",
     "@types/react-native": "0.72.2",
     "react-native": "0.72.3",

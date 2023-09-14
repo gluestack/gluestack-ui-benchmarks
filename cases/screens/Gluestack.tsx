@@ -1,4 +1,4 @@
-import { HStack, VStack, Text, Image, Button } from "@gluestack-ui/themed";
+import { HStack, VStack, Text, Image } from "@gluestack-ui/themed";
 import React from "react";
 import { ScrollView } from "react-native";
 import { data } from "../../data";
