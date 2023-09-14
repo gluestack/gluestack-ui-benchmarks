@@ -54,7 +54,7 @@ This is an Expo SDK 49 App reproducer to demonstrate the performance difference 
 | Library         | 1   | 2   | 3   | 4   | 5   | avg |
 | --------------- | --- | --- | --- | --- | --- | --- |
 | Native          | 80  | 80  | 80  | 80  | 81  | 80  |
-| gluestack-ui    | 192 | 192 | 193 | 195 | 193 | 193 |
+| gluestack-ui    | 152 | 152 | 152 | 150 | 153 | 152 |
 | Tamagui         | 120 | 115 | 121 | 122 | 120 | 120 |
 | NativeBase      | 722 | 726 | 731 | 723 | 729 | 726 |
  
