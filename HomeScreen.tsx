@@ -10,16 +10,12 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("simple-component")}
       />
       <Button
-        title="Updating inline styles"
-        onPress={() => navigation.navigate("updating-inline-style")}
-      />
-      <Button
         title="Updating variants"
         onPress={() => navigation.navigate("updating-variant")}
       />
       <Button
-        title="Complex styling"
-        onPress={() => navigation.navigate("complex-styling")}
+        title="Theme and inline style"
+        onPress={() => navigation.navigate("theme-inline-styling")}
       />
       <Button
         title="Layout screen"

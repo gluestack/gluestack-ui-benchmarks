@@ -63,10 +63,10 @@ export default function App() {
                 }}
               />
               <Stack.Screen
-                name="complex-styling"
+                name="theme-inline-styling"
                 component={ComplexStyling}
                 options={{
-                  title: "Complex styling",
+                  title: "Theme and inline style",
                 }}
               />
               <Stack.Screen

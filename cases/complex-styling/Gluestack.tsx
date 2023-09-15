@@ -1,4 +1,4 @@
-import { styled } from "@gluestack-style/react";
+import { styled } from "@gluestack-ui/themed";
 import React from "react";
 import { Pressable } from "react-native";
 import { COUNT } from "../../utils";

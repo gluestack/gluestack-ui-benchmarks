@@ -1,4 +1,5 @@
 process.env.TAMAGUI_TARGET = "native"; // Don't forget to specify your TAMAGUI_TARGET here
+process.env.GLUESTACK_STYLE_TARGET = "native"; // Don't forget to specify your TAMAGUI_TARGET here
 const path = require("path");
 const myBabel = require("@gluestack-style/babel-plugin-styled-resolver");
 
@@ -12,12 +13,7 @@ module.exports = function (api) {
         {
           configPath: path.join(__dirname, "./gluestack-ui.config.ts"),
           configThemePath: ["theme"],
-          styled: [
-            path.join(
-              __dirname,
-              "./node_modules/@gluestack-ui/themed/build/components/styled"
-            ),
-          ],
+          styled: ["@gluestack-ui/themed"],
           components: ["@gluestack-ui/themed"],
         },
       ],
