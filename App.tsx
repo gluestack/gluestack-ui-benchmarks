@@ -5,15 +5,12 @@ import {
   ChangeVariants,
   LayoutScreen,
   SimpleComponent,
-  UpdateInlineStyles,
+  ComplexStyling,
 } from "./cases";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { StyledProvider } from "@gluestack-style/react";
-import { config } from "./gluestack-ui.config";
 import TMConfig from "./tamagui.config";
 import { TamaguiProvider } from "tamagui";
 import { NativeBaseProvider } from "native-base";
-import ComplexStyling from "./cases/complex-styling";
 import { GluestackUIProvider } from "@gluestack-ui/themed";
 
 const Stack = createNativeStackNavigator();
@@ -46,13 +43,6 @@ export default function App() {
                 component={SimpleComponent}
                 options={{
                   title: "Simple component",
-                }}
-              />
-              <Stack.Screen
-                name="updating-inline-style"
-                component={UpdateInlineStyles}
-                options={{
-                  title: "Updating inline style",
                 }}
               />
               <Stack.Screen
