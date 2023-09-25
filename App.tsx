@@ -6,6 +6,9 @@ import {
   LayoutScreen,
   SimpleComponent,
   ComplexStyling,
+  SimpleComponentVariants,
+  SimpleComponentVariantsStates,
+  SimpleComponentVariantsStatesInline,
 } from "./cases";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TMConfig from "./tamagui.config";
@@ -64,6 +67,28 @@ export default function App() {
                 component={LayoutScreen}
                 options={{
                   title: "Layout screen",
+                }}
+              />
+
+              <Stack.Screen
+                name="simple-component-variants"
+                component={SimpleComponentVariants}
+                options={{
+                  title: "Simple component with variants",
+                }}
+              />
+              <Stack.Screen
+                name="simple-component-variants-states"
+                component={SimpleComponentVariantsStates}
+                options={{
+                  title: "Simple component with variants and states",
+                }}
+              />
+              <Stack.Screen
+                name="simple-component-variants-states-inline"
+                component={SimpleComponentVariantsStatesInline}
+                options={{
+                  title: "Simple component with variants and states and inline",
                 }}
               />
             </Stack.Navigator>

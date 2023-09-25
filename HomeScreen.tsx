@@ -21,6 +21,21 @@ const HomeScreen = ({ navigation }) => {
         title="Layout screen"
         onPress={() => navigation.navigate("layout-screen")}
       />
+
+      <Button
+        title="Simple component with variants"
+        onPress={() => navigation.navigate("simple-component-variants")}
+      />
+      <Button
+        title="Simple component with variants and states"
+        onPress={() => navigation.navigate("simple-component-variants-states")}
+      />
+      <Button
+        title="Simple component with variants and states and inline"
+        onPress={() =>
+          navigation.navigate("simple-component-variants-states-inline")
+        }
+      />
     </View>
   );
 };
