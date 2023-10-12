@@ -4,6 +4,28 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
+## Installation
+```
+npm i
+```
+OR
+
+```
+yarn
+```
+
+
+## Usage
+To start the project. Please run the following command in the project root.
+
+```
+npm run start-native-release-mode
+```
+OR
+```
+yarn start-native-release-mode
+```
+
 ### In each case we have rendered 1000 components with styling of each library. Results are average of 5 mounts.
 
 # Device: iPhone 13
