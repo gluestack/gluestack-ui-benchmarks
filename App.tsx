@@ -12,6 +12,7 @@ import TMConfig from "./tamagui.config";
 import { TamaguiProvider } from "tamagui";
 import { NativeBaseProvider } from "native-base";
 import { GluestackUIProvider } from "@gluestack-ui/themed";
+import { config } from "./gluestack-ui.config";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,7 +28,7 @@ export default function App() {
 
   return (
     <NativeBaseProvider>
-      <GluestackUIProvider>
+      <GluestackUIProvider config={config}>
         <TamaguiProvider config={TMConfig}>
           <NavigationProvider>
             <Stack.Navigator initialRouteName="home">

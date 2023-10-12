@@ -18,11 +18,23 @@ const ButtonVariants = {
     solid: {
       background: "red",
       padding: "8px",
+      "&:hover": {
+        background: "yellow",
+      },
+      "&:active": {
+        background: "blue",
+      },
     },
     outlined: {
       "border-width": "1px",
       "border-color": "red",
       background: "transparent",
+      "&:hover": {
+        background: "pink",
+      },
+      "&:active": {
+        background: "red",
+      },
     },
   },
 };
