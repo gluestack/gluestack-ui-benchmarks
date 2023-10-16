@@ -1,9 +1,9 @@
-import { styled } from "tamagui";
-import React, { useMemo } from "react";
-import { View, Text } from "react-native";
+import { styled, Stack } from "tamagui";
+import React from "react";
+// import { Text } from "react-native";
 import { COUNT } from "../../utils";
 
-const Box = styled(View, {
+const Box = styled(Stack, {
   bc: "$yellow5Light",
   p: "$2",
   m: "$1",
