@@ -1,4 +1,3 @@
-process.env.TAMAGUI_TARGET = "native"; // Don't forget to specify your TAMAGUI_TARGET here
 const path = require("path");
 const myBabel = require("@gluestack-style/babel-plugin-styled-resolver");
 
@@ -26,9 +25,6 @@ module.exports = function (api) {
       ],
       [
         "transform-inline-environment-variables",
-        {
-          include: "TAMAGUI_TARGET",
-        },
       ],
       "nativewind/babel",
     ],
