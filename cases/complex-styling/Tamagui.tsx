@@ -1,53 +1,52 @@
-import { styled } from "tamagui";
-import React from "react";
-import { COUNT } from "../../utils";
-import { Pressable } from "react-native";
+import { styled, View } from 'tamagui'
+import React from 'react'
+import { COUNT } from '../../utils'
 
-const Button = styled(Pressable, {
-  bc: "$yellow5Light",
-  p: "$2",
-  m: "$1",
+const Button = styled(View, {
+  bc: '$yellow5Light',
+  p: '$2',
+  m: '$1',
   hoverStyle: {
-    bc: "$yellow6Light",
+    bc: '$yellow6Light',
   },
   pressStyle: {
-    bc: "$yellow7Light",
+    bc: '$yellow7Light',
   },
   focusStyle: {
-    bc: "$yellow8Light",
+    bc: '$yellow8Light',
   },
   variants: {
     variant: {
       solid: {
-        bc: "$red5Light",
-        p: "$2",
+        bc: '$red5Light',
+        p: '$2',
         hoverStyle: {
-          bc: "$red6Light",
+          bc: '$red6Light',
         },
         pressStyle: {
-          bc: "$red7Light",
+          bc: '$red7Light',
         },
         focusStyle: {
-          bc: "$red8Light",
+          bc: '$red8Light',
         },
       },
       outlined: {
-        borderWidth: "$1",
-        borderColor: "$red5Light",
-        bc: "transparent",
+        borderWidth: '$1',
+        borderColor: '$red5Light',
+        bc: 'transparent',
         hoverStyle: {
-          bc: "$red6Light",
+          bc: '$red6Light',
         },
         pressStyle: {
-          bc: "$red7Light",
+          bc: '$red7Light',
         },
         focusStyle: {
-          bc: "$red8Light",
+          bc: '$red8Light',
         },
       },
     },
   },
-});
+})
 
 const Tamagui = () => {
   return (
@@ -57,18 +56,18 @@ const Tamagui = () => {
           key={k}
           variant="solid"
           hoverStyle={{
-            bc: "$purple6Light",
+            bc: '$purple6Light',
           }}
           pressStyle={{
-            bc: "$purple7Light",
+            bc: '$purple7Light',
           }}
           focusStyle={{
-            bc: "$purple8Light",
+            bc: '$purple8Light',
           }}
         />
       ))}
     </>
-  );
-};
+  )
+}
 
-export default Tamagui;
+export default Tamagui

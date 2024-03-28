@@ -1,7 +1,7 @@
-import { TamaguiProvider, XStack, YStack, Image, Text } from "tamagui";
-import { ScrollView } from "react-native";
-import { data } from "../../data";
-import config from "../../tamagui.config";
+import { TamaguiProvider, XStack, YStack, Image, Text } from 'tamagui'
+import { ScrollView } from 'react-native'
+import { data } from '../../data'
+import config from '../../tamagui.config'
 
 export function Provider({ children, ...props }) {
   return (
@@ -13,11 +13,11 @@ export function Provider({ children, ...props }) {
     >
       {children}
     </TamaguiProvider>
-  );
+  )
 }
 
 export const ListItem = (item) => {
-  const { name, thumbnail, label1, label2, label3 } = item.item.values;
+  const { name, thumbnail, label1, label2, label3 } = item.item.values
 
   return (
     <XStack
@@ -67,8 +67,8 @@ export const ListItem = (item) => {
         {/* <Icon /> */}
       </YStack>
     </XStack>
-  );
-};
+  )
+}
 
 function Label({ text }) {
   return (
@@ -86,7 +86,7 @@ function Label({ text }) {
         {text}
       </Text>
     </XStack>
-  );
+  )
 }
 
 export const Tamagui = () => {
@@ -98,5 +98,5 @@ export const Tamagui = () => {
         ))}
       </Provider>
     </ScrollView>
-  );
-};
+  )
+}
