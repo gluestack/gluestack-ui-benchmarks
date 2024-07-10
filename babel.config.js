@@ -10,8 +10,6 @@ module.exports = function (api) {
       [
         myBabel,
         {
-          configPath: path.join(__dirname, "./gluestack-ui.config.ts"),
-          configThemePath: ["theme"],
           styled: ["@gluestack-ui/themed"],
           components: ["@gluestack-ui/themed"],
         },
