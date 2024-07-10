@@ -13,12 +13,12 @@ export const ListItem = (item) => {
   return (
     <HStack
       borderWidth={1}
-      bg="$warmGray900"
+      bg="$red300"
       p="$3"
       h={88}
-      borderColor="$warmGray800"
+      borderColor="$red800"
       rounded="$sm"
-      my="$1"
+      m="$1"
     >
       <VStack h={"$16"} w={"$16"} mr={3}>
         <VStack
@@ -63,10 +63,9 @@ export const ListItem = (item) => {
 function Label({ text }) {
   return (
     <HStack
-      h={6}
       px={2}
       py={1}
-      bg="$backgroundDark300"
+      bg="$red800"
       mr={2}
       borderRadius={4}
       alignItems="center"

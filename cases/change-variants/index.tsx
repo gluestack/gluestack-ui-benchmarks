@@ -23,6 +23,8 @@ function ChangeVariants() {
         return <ReactNative toggleVariant={toggleVariant} />;
       case "gluestack":
         return <Gluestack toggleVariant={toggleVariant} />;
+      case "gluestack-v2":
+        return <Gluestack toggleVariant={toggleVariant} />;
       case "Tamagui":
         return <Tamagui toggleVariant={toggleVariant} />;
       case "NativeBase":
@@ -38,6 +40,7 @@ function ChangeVariants() {
       <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button title="gluestack" onPress={onStyleTypePress("gluestack")} />
+      <Button title="gluestack-v2" onPress={onStyleTypePress("gluestack-v2")} />
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
       <Button title="NativeBase" onPress={onStyleTypePress("NativeBase")} />
       <Button

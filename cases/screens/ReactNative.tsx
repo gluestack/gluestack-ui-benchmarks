@@ -1,29 +1,29 @@
 import React from "react";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { data } from "../../data";
 
 export const Provider = (props: any) => props.children;
 
 export const ListItem = (item: any) => {
-  const { name, thumbnail, label1, label2, label3 } = item.item;
+  const { name, thumbnail, label1, label2, label3 } = item.item.values;
 
   return (
     <TouchableOpacity>
       <View
         style={{
-          backgroundColor: "#23262F",
+          backgroundColor: "#fca5a5",
           borderRadius: 8,
-          marginVertical: 4,
+          margin: 4,
         }}
       >
         <View
           style={{
             height: 88,
             flexDirection: "row",
-            backgroundColor: "#23262F",
+            backgroundColor: "#fca5a5",
             borderRadius: 8,
             padding: 12,
-            borderColor: "#FFFFFF14",
+            borderColor: "#991b1b",
             borderWidth: 1,
           }}
         >
@@ -52,10 +52,8 @@ export const ListItem = (item: any) => {
               }}
               source={{
                 uri: thumbnail,
-                width: 64,
-                height: 64,
               }}
-              resizeMode="cover"
+              resizeMode="contain"
             />
           </View>
           <View
@@ -109,7 +107,7 @@ function Label({ text }: { text: string }) {
         height: 24,
         paddingHorizontal: 8,
         paddingVertical: 4,
-        backgroundColor: "#000",
+        backgroundColor: "#fca5a5",
         marginRight: 8,
         borderRadius: 4,
         alignItems: "center",
@@ -137,10 +135,12 @@ function Label({ text }: { text: string }) {
 
 export const ReactNative = () => {
   return (
-    <Provider>
-      {[...data, ...data].map((item, index) => (
-        <ListItem key={index} item={item} />
-      ))}
-    </Provider>
+    <ScrollView>
+      <Provider>
+        {[...data, ...data].map((item, index) => (
+          <ListItem key={index} item={item} />
+        ))}
+      </Provider>
+    </ScrollView>
   );
 };

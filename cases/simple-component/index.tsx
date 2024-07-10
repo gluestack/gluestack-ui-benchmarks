@@ -7,6 +7,7 @@ import NativeBase from "./NativeBase";
 import Tamagui from "./Tamagui";
 import TimedRender from "../../components/TimedRender";
 import StyledComponents from "./styled-components";
+import GluestackV2 from "./GluestackV2";
 
 function Example() {
   const [styleType, setStyleType] = useState(undefined);
@@ -21,6 +22,8 @@ function Example() {
         return <ReactNative />;
       case "gluestack":
         return <Gluestack />;
+      case "gluestack-v2":
+        return <GluestackV2 />;
       case "Tamagui":
         return <Tamagui />;
       case "NativeBase":
@@ -36,6 +39,7 @@ function Example() {
       <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button title="gluestack" onPress={onStyleTypePress("gluestack")} />
+      <Button title="gluestack-v2" onPress={onStyleTypePress("gluestack-v2")} />
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
       <Button title="NativeBase" onPress={onStyleTypePress("NativeBase")} />
       <Button

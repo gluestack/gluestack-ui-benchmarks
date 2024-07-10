@@ -7,6 +7,7 @@ import { ReactNative } from "./ReactNative";
 import TimedRender from "../../components/TimedRender";
 import { Tamagui } from "./Tamagui";
 import { NativeBase } from "./NativeBase";
+import { GlueStackV2 } from "./GluestackV2";
 
 export default function LayoutScreen() {
   const [styleType, setStyleType] = useState(undefined);
@@ -21,6 +22,8 @@ export default function LayoutScreen() {
         return <ReactNative />;
       case "gluestack":
         return <GlueStack />;
+      case "gluestack-v2":
+        return <GlueStackV2 />;
       case "Tamagui":
         return <Tamagui />;
       case "NativeBase":
@@ -35,6 +38,7 @@ export default function LayoutScreen() {
       <Text style={styles.text}>Tap a style library to start rendering</Text>
       <Button title="React Native" onPress={onStyleTypePress("React Native")} />
       <Button title="gluestack" onPress={onStyleTypePress("gluestack")} />
+      <Button title="gluestack-v2" onPress={onStyleTypePress("gluestack-v2")} />
       <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
       <Button title="NativeBase" onPress={onStyleTypePress("NativeBase")} />
       {styleType ? (

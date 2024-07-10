@@ -22,12 +22,12 @@ export const ListItem = (item) => {
   return (
     <XStack
       bw={1}
-      bc="$yellow5Light"
+      bc="$red3Light"
       p="$3"
       h={88}
-      boc="$borderColor"
+      boc="$red8Light"
       borderRadius="$4"
-      my="$1"
+      margin="$1"
     >
       <YStack h={64} w={64} mr={3}>
         <YStack
@@ -39,9 +39,11 @@ export const ListItem = (item) => {
           zIndex={1}
         ></YStack>
         <Image
-          h={64}
-          w={64}
-          source={thumbnail}
+          height={64}
+          width={64}
+          source={{
+            uri: thumbnail,
+          }}
           alt={name}
           resizeMode="cover"
           borderRadius={2}
@@ -72,15 +74,7 @@ export const ListItem = (item) => {
 
 function Label({ text }) {
   return (
-    <XStack
-      h={6}
-      px={2}
-      py={1}
-      bc="$background"
-      mr={2}
-      borderRadius={4}
-      alignItems="center"
-    >
+    <XStack px={2} bc="$red8Light" mr={2} borderRadius={4} alignItems="center">
       <YStack mr={1}></YStack>
       <Text fontSize={10} fontWeight="bold" lineHeight={14} ellipse>
         {text}
