@@ -4,7 +4,7 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
-![Expo QR Code](https://qr.expo.dev/eas-update?slug=exp&projectId=0d1f6201-7dbc-4f73-a953-c6a37b6cebe2&groupId=0e4e144d-83a0-47b9-b409-4f5e87c2d038)
+<img src="https://qr.expo.dev/eas-update?slug=exp&projectId=0d1f6201-7dbc-4f73-a953-c6a37b6cebe2&groupId=0e4e144d-83a0-47b9-b409-4f5e87c2d038" width=250 height=200 alt="Expo QR Code">
 
 ## Installation
 
