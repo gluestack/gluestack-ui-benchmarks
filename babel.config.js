@@ -5,13 +5,29 @@ const myBabel = require("@gluestack-style/babel-plugin-styled-resolver");
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ["babel-preset-expo"],
+    presets: [
+      [
+        "babel-preset-expo",
+        {
+          jsxImportSource: "nativewind",
+        },
+      ],
+      "nativewind/babel",
+    ],
     plugins: [
+      [
+        "module-resolver",
+        {
+          root: ["./"],
+
+          alias: {
+            "@": "./",
+          },
+        },
+      ],
       [
         myBabel,
         {
-          configPath: path.join(__dirname, "./gluestack-ui.config.ts"),
-          configThemePath: ["theme"],
           styled: ["@gluestack-ui/themed"],
           components: ["@gluestack-ui/themed"],
         },
@@ -30,7 +46,6 @@ module.exports = function (api) {
           include: "TAMAGUI_TARGET",
         },
       ],
-      "nativewind/babel",
     ],
   };
 };

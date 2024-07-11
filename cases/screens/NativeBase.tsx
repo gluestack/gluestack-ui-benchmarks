@@ -13,76 +13,21 @@ import React from "react";
 import { ScrollView } from "react-native";
 import { data } from "../../data";
 
-const colors = {
-  light: {
-    1: "#FFFFFFCC",
-    2: "#FFFFFF66",
-    3: "#FFFFFF3D",
-    4: "#FFFFFF14",
-  },
-  dark: {
-    1: "#000000CC",
-    2: "#00000066",
-    3: "#0000003D",
-    4: "#00000014",
-  },
-  brand: {
-    darkVoid: "#141416",
-    blackGrey: "#23262F",
-    black: "#000000",
-    white: "#FFFFFF",
-  },
-};
-
-const theme = extendTheme({
-  colors,
-  components: {
-    Button: {
-      variants: {
-        solid: {
-          height: 12,
-          bg: "brand.yellow",
-          borderColor: "brand.yellow",
-          borderWidth: 0,
-          _text: {
-            fontSize: "lg",
-            fontWeight: "bold",
-            color: "brand.blackGrey",
-          },
-        },
-      },
-    },
-    View: {
-      baseStyle: {
-        flex: 1,
-        bg: "brand.darkVoid",
-      },
-    },
-    Text: {
-      baseStyle: {
-        fontSize: "sm",
-        color: "brand.white",
-        fontWeight: "medium",
-      },
-    },
-  },
-});
-
 export function Provider({ children }) {
-  return <NativeBaseProvider theme={theme}>{children}</NativeBaseProvider>;
+  return <NativeBaseProvider>{children}</NativeBaseProvider>;
 }
 
 export const ListItem = (item) => {
   const { name, thumbnail, label1, label2, label3 } = item.item.values;
 
   return (
-    <Pressable bg="brand.blackGrey" borderRadius="8" my="1">
+    <Pressable bg="red.300" borderRadius="8" m="1">
       <Box
         height="88"
-        bg="brand.blackGrey"
+        bg="red.300"
         borderRadius="8"
         p="3"
-        borderColor="light.4"
+        borderColor="red.800"
         borderWidth="1"
         flexDirection="row"
       >
@@ -134,7 +79,7 @@ function Label({ text }) {
       h={6}
       px={2}
       py={1}
-      bg="brand.black"
+      bg="red.300"
       mr={2}
       borderRadius="4"
       alignItems="center"

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ReactNativeBenchmarks",
-    "slug": "ReactNativeBenchmarks",
+    "slug": "gluestack-ui-benchmarks",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.reactnativebenchmarks"
@@ -24,6 +26,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0d1f6201-7dbc-4f73-a953-c6a37b6cebe2"
+      }
+    },
+    "owner": "gluestack",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0d1f6201-7dbc-4f73-a953-c6a37b6cebe2"
     }
   }
 }

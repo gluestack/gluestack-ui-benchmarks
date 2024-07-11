@@ -4,73 +4,82 @@ Original reproducer was created by @tj-mc: https://github.com/tj-mc/styled-compo
 
 This is an Expo SDK 49 App reproducer to demonstrate the performance difference between popular style libraries and react-native built-in styling.
 
+![Expo QR Code](https://qr.expo.dev/eas-update?slug=exp&projectId=0d1f6201-7dbc-4f73-a953-c6a37b6cebe2&groupId=0e4e144d-83a0-47b9-b409-4f5e87c2d038)
+
 ## Installation
+
 ```
 npm i
 ```
+
 OR
 
 ```
 yarn
 ```
 
-
 ## Usage
+
 To start the project. Please run the following command in the project root.
 
 ```
 npm run start-native-release-mode
 ```
+
 OR
+
 ```
 yarn start-native-release-mode
 ```
 
 ### In each case we have rendered 1000 components with styling of each library. Results are average of 5 mounts.
 
-# Device: iPhone 13
+# Device: iPhone 15
 
 ### Mounting a simple component
 
 | Library           | 1   | 2   | 3   | 4   | 5   | avg |
 | ----------------- | --- | --- | --- | --- | --- | --- |
-| Native            | 78  | 77  | 77  | 78  | 79  | 78  |
-| gluestack-ui      | 158 | 155 | 157 | 154 | 156 | 156 |
-| Tamagui           | 170 | 169 | 170 | 170 | 171 | 170 |
-| NativeBase        | 526 | 530 | 531 | 527 | 530 | 529 |
-| Styled Components | 95  | 94  | 94  | 94  | 95  | 94  |
+| Native            | 69  | 66  | 68  | 69  | 69  | 68  |
+| gluestack-ui v1   | 133 | 132 | 131 | 131 | 134 | 132 |
+| gluestack-ui v2   | 98  | 99  | 99  | 100 | 98  | 99  |
+| Tamagui           | 157 | 156 | 156 | 156 | 157 | 156 |
+| NativeBase        | 315 | 316 | 316 | 314 | 315 | 315 |
+| Styled Components | 72  | 72  | 72  | 71  | 72  | 72  |
 
 ### Component with variant
 
 | Library           | 1   | 2   | 3   | 4   | 5   | avg |
 | ----------------- | --- | --- | --- | --- | --- | --- |
-| Native            | 83  | 78  | 80  | 77  | 78  | 78  |
-| gluestack-ui      | 174 | 169 | 169 | 168 | 169 | 170 |
-| Tamagui           | 198 | 197 | 194 | 195 | 195 | 196 |
-| NativeBase        | 620 | 621 | 624 | 609 | 621 | 619 |
-| Styled Components | 105 | 107 | 104 | 105 | 107 | 106 |
+| Native            | 70  | 79  | 72  | 71  | 71  | 73  |
+| gluestack-ui v1   | 146 | 146 | 145 | 145 | 147 | 146 |
+| gluestack-ui v2   | 145 | 145 | 144 | 144 | 144 | 144 |
+| Tamagui           | 187 | 187 | 189 | 188 | 192 | 189 |
+| NativeBase        | 355 | 354 | 356 | 355 | 355 | 355 |
+| Styled Components | 77  | 78  | 78  | 78  | 77  | 78  |
 
 ### Mounting component with theme and inline style
 
-| Library           | 1    | 2    | 3    | 4    | 5    | avg  |
-| ----------------- | ---- | ---- | ---- | ---- | ---- | ---- |
-| gluestack-ui      | 361  | 359  | 356  | 359  | 357  | 358  |
-| Tamagui           | 510  | 509  | 514  | 509  | 509  | 510  |
-| NativeBase        | 1078 | 1072 | 1086 | 1073 | 1079 | 1078 |
+| Library         | 1   | 2   | 3   | 4   | 5   | avg |
+| --------------- | --- | --- | --- | --- | --- | --- |
+| gluestack-ui v1 | 361 | 362 | 362 | 362 | 354 | 360 |
+| gluestack-ui v2 | 240 | 240 | 240 | 242 | 241 | 241 |
+| Tamagui         | 386 | 387 | 387 | 388 | 387 | 387 |
+| NativeBase      | 479 | 481 | 480 | 480 | 482 | 480 |
 
 > React Native and Styled Components does not provide support for state styling out of the box.
 
 ### Layout using HStack, VStack, Image and Text
 
-| Library      | 1   | 2   | 3   | 4   | 5   | avg |
-| ------------ | --- | --- | --- | --- | --- | --- |
-| Native       | 68  | 69  | 71  | 69  | 67  | 69  |
-| gluestack-ui | 120 | 120 | 119 | 120 | 119 | 120 |
-| Tamagui      | 89  | 93  | 90  | 88  | 90  | 90  |
-| NativeBase   | 464 | 477 | 511 | 507 | 495 | 491 |
+| Library         | 1   | 2   | 3   | 4   | 5   | avg |
+| --------------- | --- | --- | --- | --- | --- | --- |
+| Native          | 65  | 57  | 57  | 56  | 55  | 58  |
+| gluestack-ui v1 | 91  | 89  | 84  | 90  | 89  | 89  |
+| gluestack-ui v2 | 78  | 76  | 75  | 75  | 76  | 76  |
+| Tamagui         | 74  | 71  | 69  | 69  | 69  | 70  |
+| NativeBase      | 324 | 324 | 324 | 323 | 324 | 324 |
 
-> These benchmarks were measured on 12th October, 2023.
-
+> These benchmarks were measured on 11th July, 2024.
 
 ## Created By GeekyAnts
 

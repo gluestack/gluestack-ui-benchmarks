@@ -4,7 +4,7 @@ export const data = [
     values: {
       name: "Name 1",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -15,7 +15,7 @@ export const data = [
     values: {
       name: "Name 2",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -26,7 +26,7 @@ export const data = [
     values: {
       name: "Name 3",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -37,7 +37,7 @@ export const data = [
     values: {
       name: "Name 4",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -48,7 +48,7 @@ export const data = [
     values: {
       name: "Name 5",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -59,7 +59,7 @@ export const data = [
     values: {
       name: "Name 6",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -70,7 +70,7 @@ export const data = [
     values: {
       name: "Name 7",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -81,7 +81,7 @@ export const data = [
     values: {
       name: "Name 8",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -92,7 +92,7 @@ export const data = [
     values: {
       name: "Name 9",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -103,7 +103,7 @@ export const data = [
     values: {
       name: "Name 10",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -114,7 +114,7 @@ export const data = [
     values: {
       name: "Name 11",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -125,7 +125,7 @@ export const data = [
     values: {
       name: "Name 12",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -136,7 +136,7 @@ export const data = [
     values: {
       name: "Name 13",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
@@ -147,7 +147,7 @@ export const data = [
     values: {
       name: "Name 14",
       thumbnail:
-        "https://i.picsum.photos/id/519/64/64.jpg?hmac=2UvVBv1qnCxCzSI7dhlkzOb7f7afoJoeACk0gHeQL8M",
+        "https://fastly.picsum.photos/id/62/200/200.jpg?hmac=IdjAu94sGce82DBYTMbOYzXr7kup1tYqdr0bHkRDWUs",
       label1: "L1",
       label2: "L2",
       label3: "L3",
