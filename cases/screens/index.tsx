@@ -2,7 +2,7 @@ import { useFonts } from "expo-font";
 import { useState } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
-import { GlueStack } from "./Gluestack";
+import { GlueStack } from "./GluestackV1";
 import { ReactNative } from "./ReactNative";
 import TimedRender from "../../components/TimedRender";
 import { Tamagui } from "./Tamagui";
@@ -20,9 +20,9 @@ export default function LayoutScreen() {
     switch (styleType) {
       case "React Native":
         return <ReactNative />;
-      case "gluestack":
+      case "gluestack-ui v1":
         return <GlueStack />;
-      case "gluestack-v2":
+      case "gluestack-ui v2":
         return <GlueStackV2 />;
       case "Tamagui":
         return <Tamagui />;
@@ -36,11 +36,26 @@ export default function LayoutScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Tap a style library to start rendering</Text>
-      <Button title="React Native" onPress={onStyleTypePress("React Native")} />
-      <Button title="gluestack" onPress={onStyleTypePress("gluestack")} />
-      <Button title="gluestack-v2" onPress={onStyleTypePress("gluestack-v2")} />
-      <Button title="Tamagui" onPress={onStyleTypePress("Tamagui")} />
-      <Button title="NativeBase" onPress={onStyleTypePress("NativeBase")} />
+      <Button
+        title="React Native (v0.74.3)"
+        onPress={onStyleTypePress("React Native")}
+      />
+      <Button
+        title="gluestack-ui v1 (gluestack-style: 1.0.57)"
+        onPress={onStyleTypePress("gluestack-ui v1")}
+      />
+      <Button
+        title="gluestack-ui v2 (nativewind v4)"
+        onPress={onStyleTypePress("gluestack-ui v2")}
+      />
+      <Button
+        title="tamagui (v1.102.1)"
+        onPress={onStyleTypePress("Tamagui")}
+      />
+      <Button
+        title="NativeBase (v3.4.28)"
+        onPress={onStyleTypePress("NativeBase")}
+      />
       {styleType ? (
         <TimedRender key={styleType}>
           <Text style={styles.text}>
